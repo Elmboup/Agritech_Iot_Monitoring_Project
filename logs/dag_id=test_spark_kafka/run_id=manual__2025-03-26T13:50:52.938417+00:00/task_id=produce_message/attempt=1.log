@@ -1,0 +1,28 @@
+[2025-03-26T13:50:53.770+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-03-26T13:50:53.840+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_spark_kafka.produce_message manual__2025-03-26T13:50:52.938417+00:00 [queued]>
+[2025-03-26T13:50:53.850+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_spark_kafka.produce_message manual__2025-03-26T13:50:52.938417+00:00 [queued]>
+[2025-03-26T13:50:53.850+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-03-26T13:50:53.869+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): produce_message> on 2025-03-26 13:50:52.938417+00:00
+[2025-03-26T13:50:53.884+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'test_spark_kafka', 'produce_message', 'manual__2025-03-26T13:50:52.938417+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/create_topic.py', '--cfg-path', '/tmp/tmpwkdmf12s']
+[2025-03-26T13:50:53.889+0000] {standard_task_runner.py:91} INFO - Job 11: Subtask produce_message
+[2025-03-26T13:50:53.890+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=2967) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-03-26T13:50:53.891+0000] {standard_task_runner.py:64} INFO - Started process 2968 to run task
+[2025-03-26T13:50:53.950+0000] {task_command.py:426} INFO - Running <TaskInstance: test_spark_kafka.produce_message manual__2025-03-26T13:50:52.938417+00:00 [running]> on host 39d8137af0c6
+[2025-03-26T13:50:54.040+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_spark_kafka' AIRFLOW_CTX_TASK_ID='produce_message' AIRFLOW_CTX_EXECUTION_DATE='2025-03-26T13:50:52.938417+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-26T13:50:52.938417+00:00'
+[2025-03-26T13:50:54.041+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-03-26T13:50:54.056+0000] {conn.py:362} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.20.0.9', 9092)]>: connecting to broker:9092 [('172.20.0.9', 9092) IPv4]
+[2025-03-26T13:50:54.056+0000] {conn.py:957} INFO - Probing node bootstrap-0 broker version
+[2025-03-26T13:50:54.057+0000] {conn.py:393} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.20.0.9', 9092)]>: Connection complete.
+[2025-03-26T13:50:54.163+0000] {conn.py:1019} INFO - Broker version identified as 2.6.0
+[2025-03-26T13:50:54.165+0000] {conn.py:1020} INFO - Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+[2025-03-26T13:50:54.185+0000] {conn.py:362} INFO - <BrokerConnection node_id=1 host=broker:9092 <connecting> [IPv4 ('172.20.0.9', 9092)]>: connecting to broker:9092 [('172.20.0.9', 9092) IPv4]
+[2025-03-26T13:50:54.186+0000] {conn.py:393} INFO - <BrokerConnection node_id=1 host=broker:9092 <connecting> [IPv4 ('172.20.0.9', 9092)]>: Connection complete.
+[2025-03-26T13:50:54.187+0000] {conn.py:673} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.20.0.9', 9092)]>: Closing connection. 
+[2025-03-26T13:50:54.192+0000] {logging_mixin.py:188} INFO - Message envoyé à Kafka: {'timestamp': 1742997054.1801789, 'event_type': 'data_event', 'value': {'data_point': 42, 'description': 'Exemple de donnée'}}
+[2025-03-26T13:50:54.193+0000] {conn.py:673} INFO - <BrokerConnection node_id=1 host=broker:9092 <connected> [IPv4 ('172.20.0.9', 9092)]>: Closing connection. 
+[2025-03-26T13:50:54.194+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-03-26T13:50:54.195+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-03-26T13:50:54.212+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=test_spark_kafka, task_id=produce_message, run_id=manual__2025-03-26T13:50:52.938417+00:00, execution_date=20250326T135052, start_date=20250326T135053, end_date=20250326T135054
+[2025-03-26T13:50:54.267+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-03-26T13:50:54.295+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-26T13:50:54.297+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,49 @@
+[2025-03-27T00:00:06.555+0000] {processor.py:161} INFO - Started process (PID=13634) to work on /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:00:06.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_test.py for tasks to queue
+[2025-03-27T00:00:06.556+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:00:06.556+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:00:06.664+0000] {processor.py:840} INFO - DAG(s) 'test_airflow_kafka' retrieved from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:00:06.826+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:00:06.826+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-27T00:00:06.835+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:00:06.835+0000] {dag.py:3947} INFO - Setting next_dagrun for test_airflow_kafka to None, run_after=None
+[2025-03-27T00:00:06.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_test.py took 0.303 seconds
+[2025-03-27T00:00:36.972+0000] {processor.py:161} INFO - Started process (PID=13665) to work on /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:00:36.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_test.py for tasks to queue
+[2025-03-27T00:00:36.974+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:00:36.974+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:00:37.074+0000] {processor.py:840} INFO - DAG(s) 'test_airflow_kafka' retrieved from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:00:37.208+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:00:37.208+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-27T00:00:37.217+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:00:37.217+0000] {dag.py:3947} INFO - Setting next_dagrun for test_airflow_kafka to None, run_after=None
+[2025-03-27T00:00:37.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_test.py took 0.270 seconds
+[2025-03-27T00:01:07.312+0000] {processor.py:161} INFO - Started process (PID=13696) to work on /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:01:07.313+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_test.py for tasks to queue
+[2025-03-27T00:01:07.314+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:01:07.314+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:01:07.414+0000] {processor.py:840} INFO - DAG(s) 'test_airflow_kafka' retrieved from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:01:07.435+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:01:07.434+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-27T00:01:07.445+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:01:07.444+0000] {dag.py:3947} INFO - Setting next_dagrun for test_airflow_kafka to None, run_after=None
+[2025-03-27T00:01:07.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_test.py took 0.165 seconds
+[2025-03-27T00:01:37.626+0000] {processor.py:161} INFO - Started process (PID=13721) to work on /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:01:37.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_test.py for tasks to queue
+[2025-03-27T00:01:37.627+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:01:37.627+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:01:37.733+0000] {processor.py:840} INFO - DAG(s) 'test_airflow_kafka' retrieved from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:01:37.754+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:01:37.753+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-27T00:01:37.764+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:01:37.764+0000] {dag.py:3947} INFO - Setting next_dagrun for test_airflow_kafka to None, run_after=None
+[2025-03-27T00:01:37.778+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_test.py took 0.160 seconds
+[2025-03-27T00:02:08.056+0000] {processor.py:161} INFO - Started process (PID=13752) to work on /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:02:08.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_test.py for tasks to queue
+[2025-03-27T00:02:08.058+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:02:08.057+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:02:08.199+0000] {processor.py:840} INFO - DAG(s) 'test_airflow_kafka' retrieved from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:02:08.231+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:02:08.231+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-27T00:02:08.405+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:02:08.405+0000] {dag.py:3947} INFO - Setting next_dagrun for test_airflow_kafka to None, run_after=None
+[2025-03-27T00:02:08.423+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_test.py took 0.378 seconds
+[2025-03-27T00:02:38.722+0000] {processor.py:161} INFO - Started process (PID=13783) to work on /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:02:38.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_test.py for tasks to queue
+[2025-03-27T00:02:38.723+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:02:38.723+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:02:38.828+0000] {processor.py:840} INFO - DAG(s) 'test_airflow_kafka' retrieved from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:02:38.851+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:02:38.850+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-27T00:02:38.978+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:02:38.978+0000] {dag.py:3947} INFO - Setting next_dagrun for test_airflow_kafka to None, run_after=None
+[2025-03-27T00:02:38.991+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_test.py took 0.274 seconds
+[2025-03-27T00:03:09.141+0000] {processor.py:161} INFO - Started process (PID=13814) to work on /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:03:09.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_test.py for tasks to queue
+[2025-03-27T00:03:09.143+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:03:09.143+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:03:09.240+0000] {processor.py:840} INFO - DAG(s) 'test_airflow_kafka' retrieved from /opt/airflow/dags/kafka_test.py
+[2025-03-27T00:03:09.379+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:03:09.379+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-27T00:03:09.390+0000] {logging_mixin.py:188} INFO - [2025-03-27T00:03:09.389+0000] {dag.py:3947} INFO - Setting next_dagrun for test_airflow_kafka to None, run_after=None
+[2025-03-27T00:03:09.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_test.py took 0.276 seconds

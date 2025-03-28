@@ -1,0 +1,45 @@
+[2025-03-26T13:18:34.877+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-03-26T13:18:34.904+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kafka_spark_streaming.spark_streaming_task manual__2025-03-26T13:13:30.883084+00:00 [queued]>
+[2025-03-26T13:18:34.910+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kafka_spark_streaming.spark_streaming_task manual__2025-03-26T13:13:30.883084+00:00 [queued]>
+[2025-03-26T13:18:34.910+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2025-03-26T13:18:34.919+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): spark_streaming_task> on 2025-03-26 13:13:30.883084+00:00
+[2025-03-26T13:18:34.925+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'kafka_spark_streaming', 'spark_streaming_task', 'manual__2025-03-26T13:13:30.883084+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/dag_kafka_spark_streaming.py', '--cfg-path', '/tmp/tmpulaa3uh6']
+[2025-03-26T13:18:34.927+0000] {standard_task_runner.py:91} INFO - Job 8: Subtask spark_streaming_task
+[2025-03-26T13:18:34.929+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1240) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-03-26T13:18:34.930+0000] {standard_task_runner.py:64} INFO - Started process 1241 to run task
+[2025-03-26T13:18:34.959+0000] {task_command.py:426} INFO - Running <TaskInstance: kafka_spark_streaming.spark_streaming_task manual__2025-03-26T13:13:30.883084+00:00 [running]> on host 39d8137af0c6
+[2025-03-26T13:18:35.016+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kafka_spark_streaming' AIRFLOW_CTX_TASK_ID='spark_streaming_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-26T13:13:30.883084+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-26T13:13:30.883084+00:00'
+[2025-03-26T13:18:35.016+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-03-26T13:18:35.027+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-03-26T13:18:35.027+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_kafka_spark_streaming.py", line 12, in start_spark_streaming
+    subprocess.run(["spark-submit", "./script/spark_streaming.py"])
+  File "/usr/local/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: 'spark-submit'
+[2025-03-26T13:18:35.035+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=kafka_spark_streaming, task_id=spark_streaming_task, run_id=manual__2025-03-26T13:13:30.883084+00:00, execution_date=20250326T131330, start_date=20250326T131834, end_date=20250326T131835
+[2025-03-26T13:18:35.042+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 8 for task spark_streaming_task ([Errno 13] Permission denied: 'spark-submit'; 1241)
+[2025-03-26T13:18:35.063+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-03-26T13:18:35.113+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-26T13:18:35.115+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

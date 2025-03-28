@@ -1,0 +1,25 @@
+col_name,data_type,comment
+creation_time,timestamp,
+insertday,varchar(8),
+inserthour,varchar(2),
+tablename,varchar(32),
+source,varchar(256),
+count_split,int,
+count_filter,int,
+count_parsed,int,
+count_errors,int,
+count_rows,int,
+count_df_initial,int,
+count_df_enriched,int,
+count_df_distinct,int,
+year,int,
+month,int,
+day,int,
+hour,int,
+,NULL,NULL
+# Partition Information,NULL,NULL
+# col_name,data_type,comment
+year,int,
+month,int,
+day,int,
+hour,int,
