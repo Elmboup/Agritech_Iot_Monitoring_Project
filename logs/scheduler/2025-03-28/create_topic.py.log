@@ -1,0 +1,379 @@
+[2025-03-28T22:55:31.331+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T22:55:31.331+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T22:55:31.333+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:55:31.333+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:55:31.737+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:55:31.864+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:55:31.863+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:test_spark_kafka
+[2025-03-28T22:55:31.871+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:55:31.871+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:test_spark_kafka
+[2025-03-28T22:55:31.877+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:55:31.877+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:test_spark_kafka
+[2025-03-28T22:55:31.877+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:55:31.877+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T22:55:31.890+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:55:31.889+0000] {dag.py:3111} INFO - Creating ORM DAG for test_spark_kafka
+[2025-03-28T22:55:31.890+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:55:31.890+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T22:55:31.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.578 seconds
+[2025-03-28T22:56:02.216+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T22:56:02.217+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T22:56:02.218+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:56:02.218+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:56:02.329+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:56:02.357+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:56:02.357+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T22:56:02.372+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:56:02.372+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T22:56:02.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.174 seconds
+[2025-03-28T22:56:32.658+0000] {processor.py:161} INFO - Started process (PID=284) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T22:56:32.659+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T22:56:32.661+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:56:32.660+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:56:32.767+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:56:32.790+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:56:32.790+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T22:56:32.802+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:56:32.802+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T22:56:32.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.170 seconds
+[2025-03-28T22:57:03.088+0000] {processor.py:161} INFO - Started process (PID=315) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T22:57:03.094+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T22:57:03.096+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:57:03.096+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:57:03.207+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:57:03.227+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:57:03.226+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T22:57:03.236+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:57:03.236+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T22:57:03.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.173 seconds
+[2025-03-28T22:57:33.500+0000] {processor.py:161} INFO - Started process (PID=346) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T22:57:33.501+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T22:57:33.502+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:57:33.502+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:57:33.605+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:57:33.628+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:57:33.628+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T22:57:33.641+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:57:33.641+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T22:57:33.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.160 seconds
+[2025-03-28T22:58:03.944+0000] {processor.py:161} INFO - Started process (PID=377) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T22:58:03.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T22:58:03.948+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:58:03.947+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:58:04.056+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:58:04.077+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:58:04.076+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T22:58:04.087+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:58:04.086+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T22:58:04.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.166 seconds
+[2025-03-28T22:58:34.386+0000] {processor.py:161} INFO - Started process (PID=408) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T22:58:34.387+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T22:58:34.390+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:58:34.389+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:58:34.496+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:58:34.518+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:58:34.518+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T22:58:34.528+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:58:34.528+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T22:58:34.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.164 seconds
+[2025-03-28T22:59:04.848+0000] {processor.py:161} INFO - Started process (PID=440) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T22:59:04.849+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T22:59:04.851+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:59:04.851+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:59:04.954+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:59:04.975+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:59:04.975+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T22:59:04.985+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:59:04.985+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T22:59:04.997+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.160 seconds
+[2025-03-28T22:59:35.241+0000] {processor.py:161} INFO - Started process (PID=471) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T22:59:35.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T22:59:35.255+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:59:35.255+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:59:35.366+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T22:59:35.387+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:59:35.387+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T22:59:35.397+0000] {logging_mixin.py:188} INFO - [2025-03-28T22:59:35.397+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T22:59:35.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.174 seconds
+[2025-03-28T23:00:05.705+0000] {processor.py:161} INFO - Started process (PID=502) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:00:05.715+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:00:05.718+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:00:05.717+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:00:05.825+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:00:05.846+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:00:05.845+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:00:05.858+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:00:05.858+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:00:05.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.188 seconds
+[2025-03-28T23:00:36.179+0000] {processor.py:161} INFO - Started process (PID=533) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:00:36.185+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:00:36.186+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:00:36.186+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:00:36.283+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:00:36.304+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:00:36.303+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:00:36.313+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:00:36.313+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:00:36.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.152 seconds
+[2025-03-28T23:01:06.593+0000] {processor.py:161} INFO - Started process (PID=564) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:01:06.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:01:06.600+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:01:06.600+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:01:06.697+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:01:06.717+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:01:06.717+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:01:06.726+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:01:06.726+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:01:06.739+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.151 seconds
+[2025-03-28T23:01:37.019+0000] {processor.py:161} INFO - Started process (PID=595) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:01:37.025+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:01:37.026+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:01:37.026+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:01:37.127+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:01:37.147+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:01:37.147+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:01:37.156+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:01:37.156+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:01:37.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.155 seconds
+[2025-03-28T23:02:07.449+0000] {processor.py:161} INFO - Started process (PID=626) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:02:07.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:02:07.458+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:02:07.458+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:02:07.561+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:02:07.581+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:02:07.581+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:02:07.591+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:02:07.590+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:02:07.602+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.164 seconds
+[2025-03-28T23:02:37.910+0000] {processor.py:161} INFO - Started process (PID=657) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:02:37.916+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:02:37.919+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:02:37.918+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:02:38.023+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:02:38.043+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:02:38.043+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:02:38.053+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:02:38.053+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:02:38.069+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.169 seconds
+[2025-03-28T23:03:08.359+0000] {processor.py:161} INFO - Started process (PID=688) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:03:08.360+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:03:08.362+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:03:08.362+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:03:08.468+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:03:08.489+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:03:08.489+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:03:08.500+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:03:08.500+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:03:08.513+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.167 seconds
+[2025-03-28T23:03:38.797+0000] {processor.py:161} INFO - Started process (PID=719) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:03:38.803+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:03:38.805+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:03:38.805+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:03:38.944+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:03:38.990+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:03:38.989+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:03:39.016+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:03:39.016+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:03:39.058+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.272 seconds
+[2025-03-28T23:04:09.431+0000] {processor.py:161} INFO - Started process (PID=750) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:04:09.437+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:04:09.439+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:04:09.439+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:04:09.569+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:04:09.599+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:04:09.598+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:04:09.615+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:04:09.614+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:04:09.635+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.214 seconds
+[2025-03-28T23:04:39.931+0000] {processor.py:161} INFO - Started process (PID=781) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:04:39.932+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:04:39.934+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:04:39.933+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:04:40.096+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:04:40.127+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:04:40.126+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:04:40.144+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:04:40.143+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:04:40.163+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.244 seconds
+[2025-03-28T23:05:10.509+0000] {processor.py:161} INFO - Started process (PID=812) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:05:10.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:05:10.517+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:05:10.516+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:05:10.623+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:05:10.643+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:05:10.643+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:05:10.653+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:05:10.653+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:05:10.666+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.169 seconds
+[2025-03-28T23:05:40.918+0000] {processor.py:161} INFO - Started process (PID=843) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:05:40.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:05:40.925+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:05:40.924+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:05:41.049+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:05:41.072+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:05:41.071+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:05:41.082+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:05:41.082+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:05:41.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.183 seconds
+[2025-03-28T23:06:11.384+0000] {processor.py:161} INFO - Started process (PID=874) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:06:11.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:06:11.393+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:06:11.392+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:06:11.505+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:06:11.527+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:06:11.527+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:06:11.537+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:06:11.537+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:06:11.550+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.178 seconds
+[2025-03-28T23:06:41.863+0000] {processor.py:161} INFO - Started process (PID=905) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:06:41.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:06:41.872+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:06:41.872+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:06:41.980+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:06:41.999+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:06:41.999+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:06:42.009+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:06:42.009+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:06:42.021+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.169 seconds
+[2025-03-28T23:07:12.314+0000] {processor.py:161} INFO - Started process (PID=936) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:07:12.316+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:07:12.318+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:07:12.317+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:07:12.425+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:07:12.446+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:07:12.446+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:07:12.456+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:07:12.456+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:07:12.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.166 seconds
+[2025-03-28T23:07:42.756+0000] {processor.py:161} INFO - Started process (PID=967) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:07:42.762+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:07:42.764+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:07:42.764+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:07:42.894+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:07:42.921+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:07:42.921+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:07:42.932+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:07:42.932+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:07:42.962+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.214 seconds
+[2025-03-28T23:08:13.316+0000] {processor.py:161} INFO - Started process (PID=998) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:08:13.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:08:13.325+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:08:13.324+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:08:13.469+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:08:13.490+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:08:13.489+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:08:13.500+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:08:13.500+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:08:13.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.209 seconds
+[2025-03-28T23:08:43.787+0000] {processor.py:161} INFO - Started process (PID=1029) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:08:43.793+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:08:43.794+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:08:43.794+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:08:43.893+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:08:43.988+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:08:43.988+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-03-28T23:08:43.996+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:08:43.996+0000] {dag.py:3947} INFO - Setting next_dagrun for test_spark_kafka to None, run_after=None
+[2025-03-28T23:08:44.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_topic.py took 0.228 seconds
+[2025-03-28T23:09:14.358+0000] {processor.py:161} INFO - Started process (PID=1060) to work on /opt/airflow/dags/create_topic.py
+[2025-03-28T23:09:14.360+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_topic.py for tasks to queue
+[2025-03-28T23:09:14.362+0000] {logging_mixin.py:188} INFO - [2025-03-28T23:09:14.362+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:09:14.728+0000] {processor.py:840} INFO - DAG(s) 'test_spark_kafka' retrieved from /opt/airflow/dags/create_topic.py
+[2025-03-28T23:09:15.458+0000] {processor.py:186} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/processor.py", line 182, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/processor.py", line 163, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/processor.py", line 859, in process_file
+    serialize_errors = DagFileProcessor.save_dag_to_db(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 115, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/processor.py", line 895, in save_dag_to_db
+    import_errors = DagBag._sync_to_db(dags=dags, processor_subdir=dag_directory, session=session)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 664, in _sync_to_db
+    for attempt in run_with_db_retries(logger=log):
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 677, in _sync_to_db
+    _serialize_dag_capturing_errors(dag, session, processor_subdir)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 642, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/serialized_dag.py", line 158, in write_dag
+    if session.scalar(
+       ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)

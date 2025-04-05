@@ -282,7 +282,7 @@ services:
   setup:
     image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
     volumes:
-      - cer)ts:/usr/share/elasticsearch/config/certs
+      - certs:/usr/share/elasticsearch/config/certs
     user: "0"
     command: >
       bash -c '
@@ -465,6 +465,25 @@ services:
       depends_on:
         - es01
 
+  # Iot raw database 
+  iot_raw_database:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: Polytech_agri
+      POSTGRES_PASSWORD: Polytech_agri
+      POSTGRES_DB: iot_raw_data
+    volumes:
+      - agri-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    ports: 
+      - 5432:5432
+    networks:
+      - streamsnet
+
 
 networks:
   streamsnet:
@@ -472,6 +491,7 @@ networks:
 
 volumes:
   postgres-db-volume:
+  agri-db-volume :
   portainer_data:
   certs:
     driver: local
