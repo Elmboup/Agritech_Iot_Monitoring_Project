@@ -1,0 +1,14 @@
+- pipeline.id: logstash_data
+  path.config: "/usr/share/logstash/pipeline/logstash_data.conf"
+
+- pipeline.id: logstash_parse_stat
+  path.config: "/usr/share/logstash/pipeline/logstash_parse_stats.conf"
+
+- pipeline.id: logstash_anritsu_data
+  path.config: "/usr/share/logstash/pipeline/logstash_anritsu_data.conf"
+
+- pipeline.id: logstash_realtime_data
+  path.config: "/usr/share/logstash/pipeline/logstash_realtime.conf"
+
+
+# autres pipelines à ingérer

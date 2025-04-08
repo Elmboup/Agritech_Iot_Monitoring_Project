@@ -1,0 +1,17 @@
+col_name,data_type,comment
+insertdate,string,
+tablename,string,
+nbcolumns,int,
+nbrows,int,
+columns,array<string>,
+sourcefilename,string,
+year,int,
+month,int,
+day,int,
+,NULL,NULL
+# Partition Information,NULL,NULL
+# col_name,data_type,comment
+year,int,
+month,int,
+day,int,
+

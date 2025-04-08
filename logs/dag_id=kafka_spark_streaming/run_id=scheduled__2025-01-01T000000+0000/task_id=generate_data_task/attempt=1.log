@@ -1,0 +1,18 @@
+[2025-04-07T02:52:21.831+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-07T02:52:22.272+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kafka_spark_streaming.generate_data_task scheduled__2025-01-01T00:00:00+00:00 [queued]>
+[2025-04-07T02:52:22.316+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kafka_spark_streaming.generate_data_task scheduled__2025-01-01T00:00:00+00:00 [queued]>
+[2025-04-07T02:52:22.318+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-04-07T02:52:22.411+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_data_task> on 2025-01-01 00:00:00+00:00
+[2025-04-07T02:52:22.469+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'kafka_spark_streaming', 'generate_data_task', 'scheduled__2025-01-01T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/dag_kafka_spark_streaming.py', '--cfg-path', '/tmp/tmpj4v9q8dl']
+[2025-04-07T02:52:22.501+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=22433) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-07T02:52:22.503+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask generate_data_task
+[2025-04-07T02:52:22.505+0000] {standard_task_runner.py:64} INFO - Started process 22436 to run task
+[2025-04-07T02:52:23.690+0000] {task_command.py:426} INFO - Running <TaskInstance: kafka_spark_streaming.generate_data_task scheduled__2025-01-01T00:00:00+00:00 [running]> on host 42c88f897c40
+[2025-04-07T02:52:24.575+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kafka_spark_streaming' AIRFLOW_CTX_TASK_ID='generate_data_task' AIRFLOW_CTX_EXECUTION_DATE='2025-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-01-01T00:00:00+00:00'
+[2025-04-07T02:52:24.588+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-07T02:52:28.568+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-04-07T02:52:28.598+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-07T02:52:28.725+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=kafka_spark_streaming, task_id=generate_data_task, run_id=scheduled__2025-01-01T00:00:00+00:00, execution_date=20250101T000000, start_date=20250407T025222, end_date=20250407T025228
+[2025-04-07T02:52:29.471+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-04-07T02:52:29.735+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T02:52:29.782+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
