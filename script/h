@@ -1,0 +1,190 @@
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, from_json, udf
+from pyspark.sql.types import StringType, StructType, StructField, FloatType, MapType
+import json
+from datetime import datetime
+from kafka import KafkaProducer
+
+KAFKA_BROKER = "localhost:9092"
+TOPIC = "iot_raw_data" 
+
+producer = KafkaProducer(
+    bootstrap_servers=KAFKA_BROKER,
+    value_serializer=lambda v: json.dumps(v).encode("utf-8")
+)  
+
+
+# Initialiser la session Spark
+spark = SparkSession.builder \
+    .appName("IoT data transformation") \
+    .getOrCreate()
+
+# Définir le schéma pour les données IoT
+schema = StructType([
+    StructField("machine_id", StringType(), nullable=False),
+    StructField("timestamp", StringType(), nullable=False),
+    StructField("region", StringType(), nullable=False),
+    StructField("location", MapType(StringType(), StringType()), nullable=True),
+    StructField("season", StringType(), nullable=True),
+    StructField("temperature", FloatType(), nullable=False),
+    StructField("humidity", FloatType(), nullable=False),
+    StructField("soil_moisture", FloatType(), nullable=False),
+    StructField("vibration", FloatType(), nullable=False),
+    StructField("pressure", FloatType(), nullable=False)
+])
+
+
+# Lecture des données depuis Kafka
+df = spark.readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", "localhost:9092") \
+    .option("subscribe", "iot_raw_data") \
+    .load()
+
+# Convertir la valeur JSON en colonnes
+parsed_df = df.selectExpr("CAST(value AS STRING) as json_value") \
+    .select(from_json(col("json_value"), schema).alias("data")) \
+    .select("data.*")
+
+# Définir les seuils pour chaque mesure selon les régions et les saisons
+def get_thresholds(region, season):
+    thresholds = {
+        # Structure: {region: {season: {parameter: [warning_min, warning_max, critical_min, critical_max]}}}
+        "DK": {
+            "Saison_Seche_Fraiche": {
+                "temperature": [15, 35, 10, 45],
+                "humidity": [30, 80, 20, 90],
+                "soil_moisture": [20, 70, 10, 80],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            },
+            "Saison_Seche_Chaude": {
+                "temperature": [20, 45, 15, 48],
+                "humidity": [25, 75, 15, 85],
+                "soil_moisture": [15, 65, 5, 75],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            },
+            "Hivernage": {
+                "temperature": [22, 37, 18, 42],
+                "humidity": [45, 90, 35, 98],
+                "soil_moisture": [40, 90, 30, 98],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            }
+        },
+
+        "TH": {
+            "Saison_Seche_Fraiche": {
+                "temperature": [15, 45, 10, 47],
+                "humidity": [25, 75, 15, 85],
+                "soil_moisture": [20, 70, 10, 80],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            },
+            "Saison_Seche_Chaude": {
+                "temperature": [20, 45, 10, 48],
+                "humidity": [20, 70, 10, 80],
+                "soil_moisture": [15, 65, 5, 75],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            },
+            "Hivernage": {
+                "temperature": [20, 34, 15, 38],
+                "humidity": [40, 85, 30, 95],
+                "soil_moisture": [35, 85, 25, 95],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            }
+        },
+        "TB": {
+            "Saison_Seche_Fraiche": {
+                "temperature": [16, 30, 12, 35],
+                "humidity": [22, 72, 12, 82],
+                "soil_moisture": [18, 68, 8, 78],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            },
+            "Saison_Seche_Chaude": {
+                "temperature": [20, 47, 15, 49],
+                "humidity": [18, 68, 8, 78],
+                "soil_moisture": [12, 62, 5, 72],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            },
+            "Hivernage": {
+                "temperature": [18, 32, 13, 37],
+                "humidity": [35, 80, 25, 90],
+                "soil_moisture": [30, 80, 20, 90],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            }
+        },
+        "MT": {
+            "Saison_Seche_Fraiche": {
+                "temperature": [10, 28, 10, 45],
+                "humidity": [18, 68, 8, 78],
+                "soil_moisture": [15, 65, 5, 75],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            },
+            "Saison_Seche_Chaude": {
+                "temperature": [18, 45, 13, 48],
+                "humidity": [15, 65, 5, 75],
+                "soil_moisture": [10, 60, 5, 70],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            },
+            "Hivernage": {
+                "temperature": [16, 30, 12, 35],
+                "humidity": [30, 75, 20, 85],
+                "soil_moisture": [25, 75, 15, 85],
+                "vibration": [0.2, 3.5, 0.1, 4.5],
+                "pressure": [0.7, 2.2, 0.5, 2.5]
+            }
+        }
+    }
+    
+    return thresholds[region][season]
+
+#déterminer le statut d'un capteur
+@udf(returnType=StringType())
+def determine_sensor_status(region, season, temperature, humidity, soil_moisture, vibration, pressure):
+    thresholds = get_thresholds(region, season)
+    
+    # Vérifier si une des mesures est hors des limites critiques
+    if (temperature < thresholds["temperature"][2] or temperature > thresholds["temperature"][3] or
+        humidity < thresholds["humidity"][2] or humidity > thresholds["humidity"][3] or
+        soil_moisture < thresholds["soil_moisture"][2] or soil_moisture > thresholds["soil_moisture"][3] or
+        vibration < thresholds["vibration"][2] or vibration > thresholds["vibration"][3] or
+        pressure < thresholds["pressure"][2] or pressure > thresholds["pressure"][3]):
+        return "Critique"
+    
+    # Vérifier si une des mesures est hors des limites d'alerte
+    elif (temperature < thresholds["temperature"][0] or temperature > thresholds["temperature"][1] or
+          humidity < thresholds["humidity"][0] or humidity > thresholds["humidity"][1] or
+          soil_moisture < thresholds["soil_moisture"][0] or soil_moisture > thresholds["soil_moisture"][1] or
+          vibration < thresholds["vibration"][0] or vibration > thresholds["vibration"][1] or
+          pressure < thresholds["pressure"][0] or pressure > thresholds["pressure"][1]):
+        return "Alerte"
+    
+    # Si toutes les mesures sont dans les limites normales
+    else:
+        return "Normal"
+
+# Ajouter le champ de statut
+df_with_status = parsed_df.withColumn(
+    "status",
+    determine_sensor_status(
+        col("region"),
+        col("season"),
+        col("temperature"),
+        col("humidity"),
+        col("soil_moisture"),
+        col("vibration"),
+        col("pressure")
+    )
+)
+
+# Écrire dans un autre topic Kafka
+producer.send(TOPIC, value=df_with_status)

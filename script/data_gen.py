@@ -14,10 +14,26 @@ producer = KafkaProducer(
 
 # DK: Dakar, TH: Thiès, TB: Touba, MT: Matam
 REGIONS = {
-    "DK": {"temp_min": 25, "temp_max": 38, "humidity_min": 40, "humidity_max": 75},
-    "TH": {"temp_min": 22, "temp_max": 35, "humidity_min": 35, "humidity_max": 70},
-    "TB": {"temp_min": 20, "temp_max": 33, "humidity_min": 30, "humidity_max": 65},
-    "MT": {"temp_min": 18, "temp_max": 30, "humidity_min": 25, "humidity_max": 60}
+    "DK": {
+        "temp_min": 25, "temp_max": 38, 
+        "humidity_min": 40, "humidity_max": 75,
+        "lat": 14.7167, "lng": -17.4677
+    },
+    "TH": {
+        "temp_min": 22, "temp_max": 35, 
+        "humidity_min": 35, "humidity_max": 70,
+        "lat": 14.7894, "lng": -16.9253
+    },
+    "TB": {
+        "temp_min": 20, "temp_max": 33, 
+        "humidity_min": 30, "humidity_max": 65,
+        "lat": 14.8676, "lng": -15.9178
+    },
+    "MT": {
+        "temp_min": 18, "temp_max": 30, 
+        "humidity_min": 25, "humidity_max": 60,
+        "lat": 15.6559, "lng": -13.2548
+    }
 }
 
 # Saisons au Sénégal en fonction du mois
@@ -36,7 +52,7 @@ def get_season_adjustments():
             "season_name": "Saison_Seche_Fraiche"
         }
     # Saison sèche chaude
-    elif current_month in [ 4, 5, 6, 7]:
+    elif current_month in [4, 5, 6, 7]:
         return {
             "temp_adjust": +3,  # Plus chaud
             "humidity_adjust": -10,  # Très sec
@@ -52,10 +68,24 @@ def get_season_adjustments():
             "season_name": "Hivernage"
         }
 
+def generate_geolocation(region_code):
+    """Génère des coordonnées légèrement variables autour du point central de la région"""
+    base_lat = REGIONS[region_code]["lat"]
+    base_lng = REGIONS[region_code]["lng"]
+    
+    # Ajouter une petite variation aléatoire (±0.02 degrés)
+    lat = base_lat + random.uniform(-0.02, 0.02)
+    lng = base_lng + random.uniform(-0.02, 0.02)
+    
+    return round(lat, 6), round(lng, 6)
+
 def generate_raw_data():
     region = random.choice(list(REGIONS.keys()))
     climate = REGIONS[region]
     season_adj = get_season_adjustments()
+    
+    # Obtenir les coordonnées géographiques
+    latitude, longitude = generate_geolocation(region)
     
     # Appliquer les ajustements saisonniers
     temp_min = climate["temp_min"] + season_adj["temp_adjust"]
@@ -71,6 +101,10 @@ def generate_raw_data():
         "machine_id": f"IOT-MACH-{region}-{random.randint(1, 100)}",
         "timestamp": datetime.utcnow().isoformat(),
         "region": region,
+        "location": {
+            "latitude": latitude,
+            "longitude": longitude,
+        },
         "season": season_adj["season_name"],
         "temperature": round(random.uniform(temp_min, temp_max), 2),
         "humidity": round(random.uniform(humidity_min, humidity_max), 2),
@@ -83,4 +117,4 @@ while True:
     data = generate_raw_data()
     producer.send(TOPIC, value=data)
     print(f"Envoyé: {data}")
-    time.sleep(2)
+    time.sleep(20)
