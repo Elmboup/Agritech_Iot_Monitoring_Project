@@ -1,0 +1,41 @@
+[2025-04-14T21:30:01.456+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-14T21:30:01.485+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: iot_data_pipeline.run_iot_producer_script scheduled__2025-04-14T21:25:00+00:00 [queued]>
+[2025-04-14T21:30:01.491+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: iot_data_pipeline.run_iot_producer_script scheduled__2025-04-14T21:25:00+00:00 [queued]>
+[2025-04-14T21:30:01.491+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-04-14T21:30:01.501+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_iot_producer_script> on 2025-04-14 21:25:00+00:00
+[2025-04-14T21:30:01.506+0000] {standard_task_runner.py:63} INFO - Started process 827 to run task
+[2025-04-14T21:30:01.509+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'iot_data_pipeline', 'run_iot_producer_script', 'scheduled__2025-04-14T21:25:00+00:00', '--job-id', '66', '--raw', '--subdir', 'DAGS_FOLDER/iot_data_dag.py', '--cfg-path', '/tmp/tmpdzxsq9pz']
+[2025-04-14T21:30:01.511+0000] {standard_task_runner.py:91} INFO - Job 66: Subtask run_iot_producer_script
+[2025-04-14T21:30:01.550+0000] {task_command.py:426} INFO - Running <TaskInstance: iot_data_pipeline.run_iot_producer_script scheduled__2025-04-14T21:25:00+00:00 [running]> on host aef507eba48f
+[2025-04-14T21:30:01.616+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='iot_data_pipeline' AIRFLOW_CTX_TASK_ID='run_iot_producer_script' AIRFLOW_CTX_EXECUTION_DATE='2025-04-14T21:25:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-14T21:25:00+00:00'
+[2025-04-14T21:30:01.616+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-14T21:30:01.629+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-04-14T21:30:01.629+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/***/dags/script/iot_data_producer.py']
+[2025-04-14T21:30:01.640+0000] {subprocess.py:86} INFO - Output:
+[2025-04-14T21:30:02.633+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-04-14T21:30:02.634+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/script/iot_data_producer.py", line 141, in <module>
+[2025-04-14T21:30:02.635+0000] {subprocess.py:93} INFO -     insert_into_postgres(data)
+[2025-04-14T21:30:02.636+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/script/iot_data_producer.py", line 116, in insert_into_postgres
+[2025-04-14T21:30:02.637+0000] {subprocess.py:93} INFO -     cursor.execute("""
+[2025-04-14T21:30:02.638+0000] {subprocess.py:93} INFO - psycopg2.errors.UndefinedColumn: column "latitude" of relation "iot_raw_data" does not exist
+[2025-04-14T21:30:02.638+0000] {subprocess.py:93} INFO - LINE 5:             vibration, pressure, latitude, longitude
+[2025-04-14T21:30:02.639+0000] {subprocess.py:93} INFO -                                          ^
+[2025-04-14T21:30:02.640+0000] {subprocess.py:93} INFO - 
+[2025-04-14T21:30:02.702+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-04-14T21:30:02.703+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-14T21:30:02.716+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-04-14T21:30:02.720+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=iot_data_pipeline, task_id=run_iot_producer_script, run_id=scheduled__2025-04-14T21:25:00+00:00, execution_date=20250414T212500, start_date=20250414T213001, end_date=20250414T213002
+[2025-04-14T21:30:02.733+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 66 for task run_iot_producer_script (Bash command failed. The command returned a non-zero exit code 1.; 827)
+[2025-04-14T21:30:02.764+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-04-14T21:30:02.781+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-14T21:30:02.783+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

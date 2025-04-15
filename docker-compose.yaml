@@ -328,6 +328,8 @@ services:
         until curl -s -X POST --cacert config/certs/ca/ca.crt -u "elastic:${ELASTIC_PASSWORD}" -H "Content-Type: application/json" https://es01:9200/_security/user/kibana_system/_password -d "{\"password\":\"${KIBANA_PASSWORD}\"}" | grep -q "^{}"; do sleep 10; done;
         echo "All done!";
       '
+    networks:
+        - streamsnet
     healthcheck:
       test: [ "CMD-SHELL", "[ -f config/certs/es01/es01.crt ]" ]
       interval: 1s
@@ -348,6 +350,8 @@ services:
         - esdata01:/usr/share/elasticsearch/data
       ports:
         - ${ES_PORT}:9200
+      networks:
+        - streamsnet
       environment:
         - node.name=es01
         - cluster.name=${CLUSTER_NAME}
@@ -394,6 +398,8 @@ services:
         - kibanadata:/usr/share/kibana/data
       ports:
         - ${KIBANA_PORT}:5601
+      networks:
+        - streamsnet
       environment:
         - SERVERNAME=kibana
         - ELASTICSEARCH_HOSTS=https://es01:9200
@@ -437,6 +443,8 @@ services:
         - ELASTIC_USER=elastic
         - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
         - ELASTIC_HOSTS=https://es01:9200
+      networks:
+        - streamsnet
 
 
   grafana:
@@ -447,11 +455,13 @@ services:
         - GF_UNIFIED_ALERTING_WEBHOOK_DISABLE_VERIFY_SSL=true
       ports:
         - "3000:3000"
+      networks:
+        - streamsnet
       depends_on:
         - es01
 
   jupyter:
-      image: jupyter/pyspark-notebook:latest
+      image: jupyter/pyspark-notebook:spark-3.3.0
       container_name: jupyter_spark
       environment:
         - PYSPARK_PYTHON=python3
@@ -461,6 +471,8 @@ services:
         - ./notebooks:/home/jovyan/work
       ports:
         - "8889:8888"
+      networks:
+        - streamsnet
       command: start-notebook.sh --NotebookApp.token=''  # Optionnel: désactiver le token d'authentification
       depends_on:
         - es01

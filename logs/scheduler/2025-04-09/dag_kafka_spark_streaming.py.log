@@ -1,0 +1,14 @@
+[2025-04-09T23:58:41.074+0000] {processor.py:161} INFO - Started process (PID=25659) to work on /opt/airflow/dags/dag_kafka_spark_streaming.py
+[2025-04-09T23:58:41.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_kafka_spark_streaming.py for tasks to queue
+[2025-04-09T23:58:41.083+0000] {logging_mixin.py:188} INFO - [2025-04-09T23:58:41.082+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_kafka_spark_streaming.py
+[2025-04-09T23:58:41.128+0000] {processor.py:840} INFO - DAG(s) 'kafka_spark_streaming' retrieved from /opt/airflow/dags/dag_kafka_spark_streaming.py
+[2025-04-09T23:58:41.233+0000] {logging_mixin.py:188} INFO - [2025-04-09T23:58:41.232+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-09T23:58:41.309+0000] {logging_mixin.py:188} INFO - [2025-04-09T23:58:41.308+0000] {dag.py:3954} INFO - Setting next_dagrun for kafka_spark_streaming to 2025-01-01 00:00:00+00:00, run_after=2025-01-01 00:00:00+00:00
+[2025-04-09T23:58:41.363+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_kafka_spark_streaming.py took 0.320 seconds
+[2025-04-09T23:59:01.980+0000] {processor.py:161} INFO - Started process (PID=211) to work on /opt/airflow/dags/dag_kafka_spark_streaming.py
+[2025-04-09T23:59:01.981+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_kafka_spark_streaming.py for tasks to queue
+[2025-04-09T23:59:01.983+0000] {logging_mixin.py:188} INFO - [2025-04-09T23:59:01.982+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_kafka_spark_streaming.py
+[2025-04-09T23:59:01.990+0000] {processor.py:840} INFO - DAG(s) 'kafka_spark_streaming' retrieved from /opt/airflow/dags/dag_kafka_spark_streaming.py
+[2025-04-09T23:59:01.999+0000] {logging_mixin.py:188} INFO - [2025-04-09T23:59:01.998+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-09T23:59:02.016+0000] {logging_mixin.py:188} INFO - [2025-04-09T23:59:02.016+0000] {dag.py:3954} INFO - Setting next_dagrun for kafka_spark_streaming to 2025-01-01 00:00:00+00:00, run_after=2025-01-01 00:00:00+00:00
+[2025-04-09T23:59:02.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_kafka_spark_streaming.py took 0.055 seconds
