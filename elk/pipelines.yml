@@ -10,5 +10,9 @@
 - pipeline.id: logstash_realtime_data
   path.config: "/usr/share/logstash/pipeline/logstash_realtime.conf"
 
+- pipeline.id: logstash_agritech_data
+  path.config: "/usr/share/logstash/pipeline/logstash_agritech.conf"
+
+
 
 # autres pipelines à ingérer

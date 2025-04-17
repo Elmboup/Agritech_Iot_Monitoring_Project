@@ -69,7 +69,7 @@ graph TD;
 - `scripts/simulate_iot.py` : Génération de données IoT.
 - `spark/transform_data.py` : Transformation des données avec Spark.
 - `configs/kafka-config.yml` : Configuration Kafka.
-- `configs/grafana-dashboard.json` : Modèle de dashboard Grafana.
+- `notebooks/iot_data_transformmation.ipynb` : Tranformations des données .
 
 ## Améliorations Futures
 - Intégration de l'IA pour la prédiction des pannes.

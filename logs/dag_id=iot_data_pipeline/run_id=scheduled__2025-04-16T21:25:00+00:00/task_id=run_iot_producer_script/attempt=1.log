@@ -1,0 +1,21 @@
+[2025-04-16T21:30:00.699+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-16T21:30:00.721+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: iot_data_pipeline.run_iot_producer_script scheduled__2025-04-16T21:25:00+00:00 [queued]>
+[2025-04-16T21:30:00.726+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: iot_data_pipeline.run_iot_producer_script scheduled__2025-04-16T21:25:00+00:00 [queued]>
+[2025-04-16T21:30:00.727+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-04-16T21:30:00.735+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_iot_producer_script> on 2025-04-16 21:25:00+00:00
+[2025-04-16T21:30:00.738+0000] {standard_task_runner.py:63} INFO - Started process 3751 to run task
+[2025-04-16T21:30:00.741+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'iot_data_pipeline', 'run_iot_producer_script', 'scheduled__2025-04-16T21:25:00+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/iot_data_dag.py', '--cfg-path', '/tmp/tmpgm3gdaah']
+[2025-04-16T21:30:00.742+0000] {standard_task_runner.py:91} INFO - Job 15: Subtask run_iot_producer_script
+[2025-04-16T21:30:00.775+0000] {task_command.py:426} INFO - Running <TaskInstance: iot_data_pipeline.run_iot_producer_script scheduled__2025-04-16T21:25:00+00:00 [running]> on host 8318a6508d39
+[2025-04-16T21:30:00.833+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='iot_data_pipeline' AIRFLOW_CTX_TASK_ID='run_iot_producer_script' AIRFLOW_CTX_EXECUTION_DATE='2025-04-16T21:25:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-16T21:25:00+00:00'
+[2025-04-16T21:30:00.833+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-16T21:30:00.844+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-04-16T21:30:00.844+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/***/dags/script/iot_data_producer.py']
+[2025-04-16T21:30:00.853+0000] {subprocess.py:86} INFO - Output:
+[2025-04-16T21:30:01.479+0000] {subprocess.py:93} INFO - [2025-04-16T21:30:01.479232+00:00] Donnée envoyée et stockée : {'machine_id': 'IOT-MACH-TB-57', 'timestamp': '2025-04-16T21:30:01.472000+00:00', 'region': 'TB', 'season': 'saison_seche', 'temperature': 36.21, 'humidity': 27.97, 'soil_moisture': 45.13, 'vibration': 2.53, 'pressure': 1.89, 'latitude': 15.3833, 'longitude': -15.5}
+[2025-04-16T21:30:01.554+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-04-16T21:30:01.555+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-16T21:30:01.582+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=iot_data_pipeline, task_id=run_iot_producer_script, run_id=scheduled__2025-04-16T21:25:00+00:00, execution_date=20250416T212500, start_date=20250416T213000, end_date=20250416T213001
+[2025-04-16T21:30:01.634+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-16T21:30:01.649+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-16T21:30:01.651+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
