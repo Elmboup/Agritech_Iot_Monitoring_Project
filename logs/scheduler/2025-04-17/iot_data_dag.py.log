@@ -3391,3 +3391,31 @@
 [2025-04-17T23:57:56.145+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:57:56.145+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-04-17T23:57:56.161+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:57:56.161+0000] {dag.py:3954} INFO - Setting next_dagrun for iot_data_pipeline to 2025-04-17 23:50:00+00:00, run_after=2025-04-17 23:55:00+00:00
 [2025-04-17T23:57:56.172+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iot_data_dag.py took 0.067 seconds
+[2025-04-17T23:58:26.651+0000] {processor.py:161} INFO - Started process (PID=4280) to work on /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:58:26.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iot_data_dag.py for tasks to queue
+[2025-04-17T23:58:26.655+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:58:26.655+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:58:26.667+0000] {processor.py:840} INFO - DAG(s) 'iot_data_pipeline' retrieved from /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:58:26.690+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:58:26.689+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-17T23:58:26.707+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:58:26.707+0000] {dag.py:3954} INFO - Setting next_dagrun for iot_data_pipeline to 2025-04-17 23:50:00+00:00, run_after=2025-04-17 23:55:00+00:00
+[2025-04-17T23:58:26.719+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iot_data_dag.py took 0.086 seconds
+[2025-04-17T23:58:57.183+0000] {processor.py:161} INFO - Started process (PID=4317) to work on /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:58:57.190+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iot_data_dag.py for tasks to queue
+[2025-04-17T23:58:57.192+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:58:57.192+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:58:57.204+0000] {processor.py:840} INFO - DAG(s) 'iot_data_pipeline' retrieved from /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:58:57.227+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:58:57.226+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-17T23:58:57.244+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:58:57.244+0000] {dag.py:3954} INFO - Setting next_dagrun for iot_data_pipeline to 2025-04-17 23:50:00+00:00, run_after=2025-04-17 23:55:00+00:00
+[2025-04-17T23:58:57.258+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iot_data_dag.py took 0.092 seconds
+[2025-04-17T23:59:27.701+0000] {processor.py:161} INFO - Started process (PID=4353) to work on /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:59:27.702+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iot_data_dag.py for tasks to queue
+[2025-04-17T23:59:27.705+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:59:27.705+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:59:27.719+0000] {processor.py:840} INFO - DAG(s) 'iot_data_pipeline' retrieved from /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:59:27.756+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:59:27.756+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-17T23:59:27.778+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:59:27.778+0000] {dag.py:3954} INFO - Setting next_dagrun for iot_data_pipeline to 2025-04-17 23:50:00+00:00, run_after=2025-04-17 23:55:00+00:00
+[2025-04-17T23:59:27.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iot_data_dag.py took 0.111 seconds
+[2025-04-17T23:59:58.241+0000] {processor.py:161} INFO - Started process (PID=4389) to work on /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:59:58.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iot_data_dag.py for tasks to queue
+[2025-04-17T23:59:58.245+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:59:58.245+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:59:58.257+0000] {processor.py:840} INFO - DAG(s) 'iot_data_pipeline' retrieved from /opt/airflow/dags/iot_data_dag.py
+[2025-04-17T23:59:58.280+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:59:58.280+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-17T23:59:58.296+0000] {logging_mixin.py:188} INFO - [2025-04-17T23:59:58.296+0000] {dag.py:3954} INFO - Setting next_dagrun for iot_data_pipeline to 2025-04-17 23:50:00+00:00, run_after=2025-04-17 23:55:00+00:00
+[2025-04-17T23:59:58.312+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iot_data_dag.py took 0.089 seconds

@@ -56,7 +56,7 @@ graph TD;
    ```
 
 ## Flux de Données
-1. **Génération de données IoT** via un script Python qui simule des capteurs et envoie les données vers Kafka.
+1. **Génération de données IoT** via un script Python (iot_data_producer) qui simule des capteurs et envoie les données vers Kafka.
 2. **Stockage brut dans PostgreSQL** pour conserver une copie des données avant transformation.
 3. **Traitement avec Spark Streaming** pour enrichir les données et détecter les anomalies.
 4. **Stockage des données transformées** dans Elasticsearch pour analyse.

@@ -136,7 +136,9 @@ def insert_into_postgres(data):
 
 
 if __name__ == "__main__":
-    data = generate_raw_data()
-    producer.send(TOPIC, value=data)
-    insert_into_postgres(data)
-    print(f"[{datetime.now(timezone.utc).isoformat()}] Donnée envoyée et stockée : {data}")
+    N = 20  # Nombre de machines simulées à chaque exécution
+    for _ in range(N):
+        data = generate_raw_data()
+        producer.send(TOPIC, value=data)
+        insert_into_postgres(data)
+        print(f"[{datetime.now(timezone.utc).isoformat()}] Donnée envoyée et stockée : {data}")
