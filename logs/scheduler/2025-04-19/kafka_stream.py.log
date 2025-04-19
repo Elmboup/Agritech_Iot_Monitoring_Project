@@ -880,3 +880,248 @@
 [2025-04-19T01:03:40.100+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:03:40.100+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-04-19T01:03:40.117+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:03:40.117+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
 [2025-04-19T01:03:40.130+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.073 seconds
+[2025-04-19T01:04:10.558+0000] {processor.py:161} INFO - Started process (PID=22543) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:04:10.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:04:10.560+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:04:10.560+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:04:10.570+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:04:10.590+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:04:10.590+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:04:10.607+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:04:10.607+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:04:10.619+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.068 seconds
+[2025-04-19T01:04:40.995+0000] {processor.py:161} INFO - Started process (PID=22579) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:04:40.996+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:04:40.997+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:04:40.996+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:04:41.005+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:04:41.026+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:04:41.026+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:04:41.043+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:04:41.043+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:04:41.056+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.065 seconds
+[2025-04-19T01:05:11.480+0000] {processor.py:161} INFO - Started process (PID=22619) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:05:11.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:05:11.482+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:05:11.482+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:05:11.492+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:05:11.513+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:05:11.513+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:05:11.530+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:05:11.530+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:05:11.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.069 seconds
+[2025-04-19T01:05:41.981+0000] {processor.py:161} INFO - Started process (PID=22655) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:05:41.982+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:05:41.984+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:05:41.983+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:05:41.996+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:05:42.017+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:05:42.017+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:05:42.034+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:05:42.034+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:05:42.047+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.074 seconds
+[2025-04-19T01:06:12.479+0000] {processor.py:161} INFO - Started process (PID=22691) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:06:12.480+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:06:12.481+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:06:12.481+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:06:12.493+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:06:12.514+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:06:12.514+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:06:12.531+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:06:12.531+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:06:12.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.073 seconds
+[2025-04-19T01:06:42.976+0000] {processor.py:161} INFO - Started process (PID=22727) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:06:42.977+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:06:42.978+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:06:42.978+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:06:42.988+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:06:43.009+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:06:43.009+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:06:43.025+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:06:43.025+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:06:43.038+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.069 seconds
+[2025-04-19T01:07:13.398+0000] {processor.py:161} INFO - Started process (PID=22763) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:07:13.399+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:07:13.400+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:07:13.400+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:07:13.408+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:07:13.429+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:07:13.429+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:07:13.450+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:07:13.449+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:07:13.462+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.068 seconds
+[2025-04-19T01:07:43.891+0000] {processor.py:161} INFO - Started process (PID=22799) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:07:43.891+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:07:43.893+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:07:43.893+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:07:43.905+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:07:43.926+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:07:43.926+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:07:43.943+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:07:43.943+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:07:43.955+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.072 seconds
+[2025-04-19T01:08:14.387+0000] {processor.py:161} INFO - Started process (PID=22835) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:08:14.387+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:08:14.389+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:08:14.389+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:08:14.400+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:08:14.420+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:08:14.420+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:08:14.436+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:08:14.435+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:08:14.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.070 seconds
+[2025-04-19T01:08:44.875+0000] {processor.py:161} INFO - Started process (PID=22871) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:08:44.876+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:08:44.877+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:08:44.877+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:08:44.887+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:08:44.908+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:08:44.907+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:08:44.925+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:08:44.925+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:08:44.937+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.069 seconds
+[2025-04-19T01:09:15.248+0000] {processor.py:161} INFO - Started process (PID=22907) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:09:15.248+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:09:15.249+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:09:15.249+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:09:15.258+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:09:15.279+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:09:15.279+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:09:15.295+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:09:15.295+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:09:15.307+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.064 seconds
+[2025-04-19T01:09:45.726+0000] {processor.py:161} INFO - Started process (PID=22943) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:09:45.727+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:09:45.729+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:09:45.728+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:09:45.741+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:09:45.762+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:09:45.762+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:09:45.779+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:09:45.778+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:09:45.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.072 seconds
+[2025-04-19T01:10:16.290+0000] {processor.py:161} INFO - Started process (PID=22983) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:10:16.291+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:10:16.292+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:10:16.292+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:10:16.303+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:10:16.324+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:10:16.324+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:10:16.341+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:10:16.340+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:10:16.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.070 seconds
+[2025-04-19T01:10:46.767+0000] {processor.py:161} INFO - Started process (PID=23019) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:10:46.768+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:10:46.769+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:10:46.769+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:10:46.781+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:10:46.803+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:10:46.803+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:10:46.819+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:10:46.819+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:10:46.831+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.072 seconds
+[2025-04-19T01:11:17.269+0000] {processor.py:161} INFO - Started process (PID=23055) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:11:17.270+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:11:17.272+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:11:17.272+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:11:17.286+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:11:17.308+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:11:17.307+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:11:17.324+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:11:17.324+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:11:17.336+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.076 seconds
+[2025-04-19T01:11:47.710+0000] {processor.py:161} INFO - Started process (PID=23091) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:11:47.711+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:11:47.713+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:11:47.713+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:11:47.722+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:11:47.742+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:11:47.742+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:11:47.759+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:11:47.759+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:11:47.772+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.068 seconds
+[2025-04-19T01:12:18.594+0000] {processor.py:161} INFO - Started process (PID=23127) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:12:18.595+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:12:18.597+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:12:18.597+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:12:18.610+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:12:18.631+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:12:18.631+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:12:18.648+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:12:18.647+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:12:18.659+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.074 seconds
+[2025-04-19T01:12:49.205+0000] {processor.py:161} INFO - Started process (PID=23163) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:12:49.206+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:12:49.207+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:12:49.207+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:12:49.217+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:12:49.237+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:12:49.237+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:12:49.254+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:12:49.253+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:12:49.267+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.069 seconds
+[2025-04-19T01:13:19.660+0000] {processor.py:161} INFO - Started process (PID=23199) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:13:19.660+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:13:19.661+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:13:19.661+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:13:19.671+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:13:19.694+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:13:19.694+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:13:19.712+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:13:19.712+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:13:19.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.071 seconds
+[2025-04-19T01:13:50.080+0000] {processor.py:161} INFO - Started process (PID=23235) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:13:50.081+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:13:50.083+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:13:50.082+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:13:50.095+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:13:50.120+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:13:50.119+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:13:50.141+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:13:50.141+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:13:50.156+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.082 seconds
+[2025-04-19T01:14:20.582+0000] {processor.py:161} INFO - Started process (PID=23271) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:14:20.583+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:14:20.584+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:14:20.584+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:14:20.594+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:14:20.615+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:14:20.615+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:14:20.632+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:14:20.632+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:14:20.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.071 seconds
+[2025-04-19T01:14:51.005+0000] {processor.py:161} INFO - Started process (PID=23307) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:14:51.006+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:14:51.007+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:14:51.007+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:14:51.016+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:14:51.037+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:14:51.036+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:14:51.053+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:14:51.053+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:14:51.065+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.066 seconds
+[2025-04-19T01:15:21.433+0000] {processor.py:161} INFO - Started process (PID=23347) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:15:21.434+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:15:21.437+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:15:21.436+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:15:21.447+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:15:21.468+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:15:21.468+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:15:21.485+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:15:21.485+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:15:21.499+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.070 seconds
+[2025-04-19T01:15:51.898+0000] {processor.py:161} INFO - Started process (PID=23383) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:15:51.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:15:51.901+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:15:51.900+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:15:51.911+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:15:51.932+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:15:51.931+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:15:51.949+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:15:51.949+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:15:51.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.069 seconds
+[2025-04-19T01:16:22.418+0000] {processor.py:161} INFO - Started process (PID=23419) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:16:22.419+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:16:22.421+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:16:22.421+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:16:22.431+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:16:22.453+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:16:22.453+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:16:22.473+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:16:22.473+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:16:22.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.075 seconds
+[2025-04-19T01:16:52.865+0000] {processor.py:161} INFO - Started process (PID=23455) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:16:52.866+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:16:52.867+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:16:52.867+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:16:52.876+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:16:52.896+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:16:52.896+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:16:52.912+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:16:52.912+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:16:52.925+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.069 seconds
+[2025-04-19T01:17:23.334+0000] {processor.py:161} INFO - Started process (PID=23491) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:17:23.335+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:17:23.339+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:17:23.339+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:17:23.349+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:17:23.370+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:17:23.370+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:17:23.387+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:17:23.387+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:17:23.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.073 seconds
+[2025-04-19T01:17:53.750+0000] {processor.py:161} INFO - Started process (PID=23527) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:17:53.751+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:17:53.753+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:17:53.753+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:17:53.766+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:17:53.819+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:17:53.819+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:17:53.851+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:17:53.851+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:17:53.888+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.147 seconds
+[2025-04-19T01:18:24.386+0000] {processor.py:161} INFO - Started process (PID=23563) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:18:24.387+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:18:24.389+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:18:24.388+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:18:24.398+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:18:24.418+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:18:24.418+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:18:24.435+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:18:24.435+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:18:24.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.068 seconds
+[2025-04-19T01:18:54.815+0000] {processor.py:161} INFO - Started process (PID=23599) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:18:54.817+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:18:54.818+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:18:54.818+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:18:54.828+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:18:54.849+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:18:54.849+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:18:54.867+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:18:54.867+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:18:54.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.073 seconds
+[2025-04-19T01:19:25.283+0000] {processor.py:161} INFO - Started process (PID=23635) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:19:25.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:19:25.286+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:19:25.285+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:19:25.298+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:19:25.319+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:19:25.319+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:19:25.336+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:19:25.336+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:19:25.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.073 seconds
+[2025-04-19T01:19:55.739+0000] {processor.py:161} INFO - Started process (PID=23672) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:19:55.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:19:55.744+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:19:55.743+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:19:55.763+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:19:55.836+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:19:55.835+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:19:55.879+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:19:55.879+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:19:55.918+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.190 seconds
+[2025-04-19T01:20:26.450+0000] {processor.py:161} INFO - Started process (PID=23712) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:20:26.451+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:20:26.453+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:20:26.452+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:20:26.463+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:20:26.484+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:20:26.484+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:20:26.502+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:20:26.502+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:20:26.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.072 seconds
+[2025-04-19T01:20:56.977+0000] {processor.py:161} INFO - Started process (PID=23748) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:20:56.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:20:56.980+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:20:56.980+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:20:56.990+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:20:57.012+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:20:57.011+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:20:57.034+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:20:57.034+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:20:57.051+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.081 seconds
+[2025-04-19T01:21:27.471+0000] {processor.py:161} INFO - Started process (PID=23784) to work on /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:21:27.472+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2025-04-19T01:21:27.474+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:21:27.473+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:21:27.484+0000] {processor.py:840} INFO - DAG(s) 'user_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2025-04-19T01:21:27.506+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:21:27.505+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-19T01:21:27.523+0000] {logging_mixin.py:188} INFO - [2025-04-19T01:21:27.523+0000] {dag.py:3954} INFO - Setting next_dagrun for user_automation to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-19T01:21:27.535+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.073 seconds
